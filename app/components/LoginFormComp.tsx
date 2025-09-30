@@ -1,16 +1,12 @@
 "use client"
 import React from 'react'
-import { useForm, SubmitHandler } from "react-hook-form";
-import { useRouter } from "next/navigation";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { useForm, SubmitHandler } from "react-hook-form"
+import { useRouter } from "next/navigation"
+import { toast, ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 import userData from "../lib/data.json"
-import { motion } from 'framer-motion';
-
-interface LoginFormData {
-  email: string;
-  password: string;
-}
+import { motion } from 'framer-motion'
+import { LoginFormData } from '../types'
 
 const LoginFormComp = () => {
   const { register, handleSubmit} = useForm<LoginFormData>();

@@ -1,36 +1,153 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Infofluencer Dashboard
 
-## Getting Started
+Modern ve kullanıcı dostu bir influencer yönetim dashboard'u. Bu proje, influencer'ları takip etmek, performans metriklerini görüntülemek ve veri analizi yapmak için geliştirilmiştir.
 
-First, run the development server:
+## 🚀 Projeyi Nasıl Çalıştırırım?
 
+### Ön Gereksinimler
+- Node.js (v18 veya üzeri)
+- npm veya yarn package manager
+
+### Kurulum Adımları
+
+1. **Projeyi klonlayın:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/metehannolgun/Infofluencer-Case.git
+cd Infofluencer-Case
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Bağımlılıkları yükleyin:**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Development server'ını başlatın:**
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Tarayıcınızda açın:**
+```
+http://localhost:3000
+```
 
-## Learn More
+### Login Bilgileri
+- **Email:** test@test.com
+- **Password:** 1234
 
-To learn more about Next.js, take a look at the following resources:
+### Build ve Production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Production build oluşturma
+npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Production server başlatma
+npm start
 
-## Deploy on Vercel
+# Kod analizi
+npm run lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Hangi Teknolojileri Kullandınız?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Frontend Framework & Language
+- **Next.js 15** - React tabanlı fullstack framework (App Router)
+- **TypeScript** - Type-safe development için
+- **React 19** - UI bileşenleri için
+
+### Styling & UI
+- **Tailwind CSS** - Utility-first CSS framework
+- **Lucide React** - Modern icon kütüphanesi
+- **Framer Motion** - Smooth animasyonlar için
+
+### Data Visualization
+- **Recharts** - Responsive chart ve grafik kütüphanesi
+
+### Form Management
+- **React Hook Form** - Performanslı form yönetimi
+
+### Notifications
+- **React Toastify** - Kullanıcı bildirimleri
+
+### Development Tools
+- **ESLint** - Kod kalitesi analizi
+- **PostCSS** - CSS işleme
+
+## 🎨 Tasarım Tercihlerinizi 2–3 Madde ile Açıklayın
+
+### 1. **Minimalist ve Clean Tasarım Yaklaşımı**
+- **Modern kartlı yapı:** KPI kartları ve chart'lar için clean card design kullanıldı
+- **Beyaz space kullanımı:** Görsellerin nefes alabilmesi için yeterli boşluk bırakıldı
+- **Tutarlı renk paleti:** Mavi tonlarda profesyonel ve güvenilir görünüm sağlandı
+- **Typography hierarchy:** Başlıklar, alt başlıklar ve içerik metinleri için net hiyerarşi
+
+### 2. **Mobile-First Responsive Tasarım**
+- **Adaptive sidebar:** Desktop'ta genişletilebilir, mobilde overlay olarak çalışan akıllı sidebar
+- **Responsive grid system:** KPI kartları ekran boyutuna göre 1-2-3 sütun düzeninde
+- **Touch-friendly interactions:** Mobil cihazlarda kolay kullanım için büyük touch target'lar
+- **Flexible chart görünümü:** Grafiklerin tüm ekran boyutlarında optimal görünmesi
+
+### 3. **Kullanıcı Deneyimi Odaklı Etkileşimler**
+- **Smooth transitions:** Sidebar açılma/kapanma, hover efektleri için yumuşak geçişler
+- **Visual feedback:** Active menu states, hover efektleri ve loading durumları
+- **Intuitive navigation:** Breadcrumb yapısı olmasa da clear navigation flow
+- **Professional data visualization:** Recharts ile interactive ve responsive grafikler
+
+## 📁 Proje Yapısı
+
+```
+📁 app/
+├── 📁 components/          # Reusable UI bileşenleri
+├── 📁 constants/          # Sabit veriler ve konfigürasyonlar
+├── 📁 dashboard/          # Dashboard sayfası
+├── 📁 lib/               # Veri dosyaları
+├── 📁 types/             # TypeScript tip tanımlamaları
+├── 📁 utils/             # Yardımcı fonksiyonlar
+└── 📁 public/            # Statik dosyalar
+```
+
+## ✨ Özellikler
+
+- 🔐 **Secure Login System** - Form validation ile güvenli giriş
+- 📊 **Interactive Dashboard** - KPI kartları ve grafiklerle veri görselleştirme
+- 📱 **Fully Responsive** - Tüm cihazlarda mükemmel görünüm
+- 🎯 **Type Safety** - TypeScript ile tam tip güvenliği
+- 🚀 **Modern Architecture** - Clean code principles ile organize edilmiş yapı
+- 💫 **Smooth Animations** - Framer Motion ile professional animasyonlar
+
+## 🎯 KPI Metrikleri
+
+Dashboard'da gösterilen temel metrikler:
+- **Toplam Influencer:** 3
+- **Toplam Takipçi:** 102.400
+- **Ortalama Etkileşim:** %4.7
+
+## 📈 Grafik Verileri
+
+Haftalık takipçi artış grafiği:
+- 1. Hafta: 200 takipçi
+- 2. Hafta: 450 takipçi  
+- 3. Hafta: 300 takipçi
+- 4. Hafta: 600 takipçi
+
+## 🔧 Geliştirme
+
+Proje clean code principles ve modern React patterns kullanılarak geliştirilmiştir:
+
+- **Component-based architecture**
+- **Separation of concerns**
+- **DRY principle**
+- **Type safety with TypeScript**
+- **Modular file organization**
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır.
+
+## 👨‍💻 Geliştirici
+
+**Metehan Olgun** - [GitHub](https://github.com/metehannolgun)
+
+---
+
+*Bu proje Infofluencer case study için geliştirilmiştir.*
