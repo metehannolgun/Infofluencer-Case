@@ -73,7 +73,7 @@ npm run lint
 - **ESLint** - Kod kalitesi analizi
 - **PostCSS** - CSS işleme
 
-## 🎨 Tasarım Tercihlerinizi 2–3 Madde ile Açıklayın
+## 🎨 Tasarım Tercihleri
 
 ### 1. **Minimalist ve Clean Tasarım Yaklaşımı**
 - **Modern kartlı yapı:** KPI kartları ve chart'lar için clean card design kullanıldı
